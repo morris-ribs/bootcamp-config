@@ -4,8 +4,7 @@ name: deploy-bootstrap-cli
 on:
     push:
         branches:
-            #- main
-            - none
+            - main
         paths:
             - config/bootstrap/**
             - .github/workflows/deploy-bootstrap-cli.yaml
@@ -19,19 +18,13 @@ jobs:
                 environment: [test, prod]
                 include:
                     - environment: test
-                      # CDF cluster, like bluefield, greenfield or westeurope-1
-                      CDF_CLUSTER: [CDF cluster]
-                      # CDF Project name
-                      CDF_PROJECT: [CDF project]
-                      # Azure AD tenant id
-                      IDP_TENANT: [AAD tenant id]
+                      CDF_CLUSTER: westeurope-1
+                      CDF_PROJECT: cdf-bootcamp-10-test
+                      IDP_TENANT: d8614ee3-198e-43be-a7ea-e750e2f5337f
                     - environment: prod
-                      # CDF cluster, like bluefield, greenfield or westeurope-1
-                      CDF_CLUSTER: [CDF cluster]
-                      # CDF Project name
-                      CDF_PROJECT: [CDF project]
-                      # Azure AD tenant id
-                      IDP_TENANT: [AAD tenant id]
+                      CDF_CLUSTER: westeurope-1
+                      CDF_PROJECT: cdf-bootcamp-10-prod
+                      IDP_TENANT: 14b5bb1c-d34b-4de0-85fc-93a4a21caac2
 
         environment: ${{ matrix.environment}}
         env:
@@ -51,5 +44,3 @@ jobs:
               with:
                   # Path to Bootstrap CLI configuration file
                   config_file: ./config/bootstrap/bootstrap-cli-config.yml
-            # "yes"|"no" deploy with special groups and aad_mappings
-            #with_special_groups: "yes"
