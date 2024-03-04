@@ -19,11 +19,11 @@ jobs:
                     - environment: test
                       CDF_CLUSTER: westeurope-1
                       CDF_PROJECT: cdf-bootcamp-10-test
-                      IDP_TENANT: d8614ee3-198e-43be-a7ea-e750e2f5337f
+                      IDP_TENANT: 16e3985b-ebe8-4e24-9da4-933e21a9fc81
                     - environment: prod
                       CDF_CLUSTER: westeurope-1
                       CDF_PROJECT: cdf-bootcamp-10-prod
-                      IDP_TENANT: 14b5bb1c-d34b-4de0-85fc-93a4a21caac2
+                      IDP_TENANT: 16e3985b-ebe8-4e24-9da4-933e21a9fc81
 
         environment: ${{ matrix.environment}}
         env:
