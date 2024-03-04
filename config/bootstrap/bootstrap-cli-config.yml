@@ -17,13 +17,13 @@ bootstrap:
         - cdf-project: cdf-bootcamp-10-test
           mappings:
               - cdf-group: cdf:root
-                idp-source-id: e036e7a7-34a9-4b52-8dd1-ca16678a9dde
+                #idp-source-id: e036e7a7-34a9-4b52-8dd1-ca16678a9dde
                 idp-source-name: bootcamp-10-test-admin
               - cdf-group: cdf:all:owner
-                idp-source-id: d8d91e58-e11b-4230-b92e-6849675199cd
+                #idp-source-id: d8d91e58-e11b-4230-b92e-6849675199cd
                 idp-source-name: bootcamp-10-test-all-owner
               - cdf-group: cdf:all:read
-                idp-source-id: ab2b1ded-ae03-4c8a-a5b1-f395a8e3ddef
+                #idp-source-id: ab2b1ded-ae03-4c8a-a5b1-f395a8e3ddef
                 idp-source-name: bootcamp-10-test-all-read
 
               # - cdf-group: cdf:uc:001:oee:owner
@@ -37,13 +37,13 @@ bootstrap:
         - cdf-project: cdf-bootcamp-10-prod
           mappings:
               - cdf-group: cdf:root
-                idp-source-id: e0dba5b2-bc2c-4094-926a-a34d10c5a4fe
+                #idp-source-id: e0dba5b2-bc2c-4094-926a-a34d10c5a4fe
                 idp-source-name: bootcamp-10-prod-admin
               - cdf-group: cdf:all:owner
-                idp-source-id: 74c2e27a-de43-42ca-8b4f-f140023ca086
+                #idp-source-id: 74c2e27a-de43-42ca-8b4f-f140023ca086
                 idp-source-name: bootcamp-10-prod-all-owner
               - cdf-group: cdf:all:read
-                idp-source-id: 94098cf7-5fb3-47b8-8b08-f8c22ed15b69
+                #idp-source-id: 94098cf7-5fb3-47b8-8b08-f8c22ed15b69
                 idp-source-name: bootcamp-10-prod-all-read
 
               # - cdf-group: cdf:uc:001:oee:owner
